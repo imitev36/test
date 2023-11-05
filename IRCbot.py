@@ -454,8 +454,8 @@ class Bot:
                 else:
                     self.connection.privmsg(self.channel, MSG_NO_GOAWAY_PRIV.format(sender_username))
 
-	    # Handle goaway command
-            if input_text.startswith("!join"):
+	    # Handle part command
+            if input_text.startswith("!part"):
                 if sender_username in ADMIN_NICKNAMES:
 
                     try:
